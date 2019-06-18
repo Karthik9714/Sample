@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WifIcoIn</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <script>
+function myFunction() {
+  var mob,password;
+ mob = document.getElementById("tel").value.length;
+ password = document.getElementById("password").value.length;
+ 	$("#password").password('toggle');
+  if(mob==0 && password==0) {
+  	alert("Fill all the fields")
+  	return false;
+  }
+ }
+ 
+
+
+</script>
+ <style type="text/css">
+ li a {
+ 	color: white;
+ 	text-decoration-style: bold;
+ 	font-family: 'Questrial', sans-serif;
+
+ }
+ 
+ ul {
+ 	margin-left: 518px;
+ }
+ 	.txt {
+ 		margin-top: 2px;
+ 		 	 min-height: 701px;
+ 		background: url('img/bg.png');
+ 		background-attachment: fixed;
+ 		background-size: cover;
+ 		background-repeat: no-repeat;
+ 	}
+ .icn {
+ 	margin: 35px 35px;
+ 	height: 40px;
+ 	width: 178px;
+ }
+ .text {
+ 	margin-left: 35px;
+ 	margin-top: 175px;
+ 	height: 180px;
+ 	width: 460px;
+ }
+ .mob {
+ 	margin-right: 40PX;
+ 	margin-top: 70PX;
+ 	float: right;
+ 	height: 390px;
+ 	width: 430px;
+ }
+ .frgt {
+ 	margin-left: 25px;
+ }
+ .btn {
+ 	border-radius: 25px;
+ 	width: 90%;
+ 	text-align: left;
+ 	background-color: #074CA6;
+ 	margin-top: 10px;
+
+ }
+ .fnt {
+     text-decoration-color: black;
+     margin-top: 20px;
+ }
+ .hol2 {
+ 	margin-left: 20px;
+ 	 	margin-top: 140px; 
+ 	 	font-family: 'Questrial', sans-serif;
+ 	 	font-size: 14px;
+ }
+ .logo {
+ 	height: 95px;
+ 	margin-left: 80px
+ }
+ .form2 {
+ 	margin-top: 20px;
+ }
+ nav {
+ 	background-color:  black;
+ 	opacity: 0.5;
+ 	width: 1060px;
+ 	height: 55px;
+ 	color: white;
+ 	text-decoration-style: bold;
+ }
+ .aro {
+ 	float: right;
+ }
+ .field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+.cpyrt {
+	padding: 5px;
+	margin-left: 10px;
+}
+li::after {
+
+content: " | ";
+position: absolute;
+    top: 15px;
+}
+.pwd {
+     background-color: transparent; 
+     border: none; 
+     float: right; 
+     margin-top: -30px;
+
+}
+ </style>
+</head>
+<body>
+<div class="hol">
+<div class="page container-fluid">
+  <div class="row ">
+    <div class="txt col-lg-9"> 
+      <a href="#"> <img class="icn" src="img/icn.png"> </a>
+      <div>
+      <img class="text" src="img/text.png">
+
+      <img class="mob" src="img/mob.png">
+      </div>
+      <div class="btm container-fluid">
+      <nav class="navbar navbar-expand-lg fixed-bottom">
+     <span class="navtx navbar-text ">
+    <span class="cpyrt"> &copy; 2019 Wificoin</span>
+   </span>
+  <ul class="navbar-nav ">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>About</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Security</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Protocols</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Team</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Blog</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Faq?</strong></a>
+    </li>
+  </ul>
+  <!-- Navbar text-->
+  
+</nav>
+</div>
+    </div>
+    <div class="form col-lg-3">
+    <div class="hol2">
+    <a href="#"><img class="logo" src="img/logo.png"></a>
+    <div class="form2">
+
+  <form  method="post" action="abc.html" onsubmit="return myFunction()">
+    <div class="form-group">
+      <label for="email"> Mobile Number</label>
+      <input type="tel" class="form-control" id="tel" name="mobno">
+
+    </div>
+    <div class="form-group">
+      <label>Password:</label>
+      <input type="password" id="password" name="password" class="form-control" data-toggle="password">
+    </div>
+   <!--  </div> -->
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me <a class="frgt" href="#">Forgot Password?</a>
+      </label>
+    </div>
+    <button type="submit" onclick="myFunction()" class="btn btn-primary">Login<i class="aro fa fa-long-arrow-right"></i></button>
+  </form>
+  </div>
+  <div>
+	<p class="fnt"><strong>Don't have an account? </strong><a href="#"> Sign up Now ! </a></p>
+</div>
+</div>
+</div>
+    	
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
